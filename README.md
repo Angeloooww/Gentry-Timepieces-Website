@@ -1,2 +1,4 @@
-"# PAPA-J-Fitness" 
-"# Find-UR-Pet" 
+The main page is the index.html
+
+
+THANKYOU!

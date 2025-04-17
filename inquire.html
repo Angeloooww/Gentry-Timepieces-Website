@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style.css">
+	<title>Gentry Timepieces - Inquiry Form</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+			background-color: #f5f5f5;
+		}
+		.container {
+			max-width: 800px;
+			margin: 20px auto;
+			padding: 20px;
+			background-color: #fff;
+			border-radius: 8px;
+			box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+		}
+		.header {
+			text-align: center;
+			margin-bottom: 20px;
+		}
+		.header h1 {
+			color: #BF9B30;
+			margin: 0;
+			font-size: 36px;
+		}
+		.header p {
+			font-size: 18px;
+			color: #333;
+		}
+		.form-group {
+			margin-bottom: 15px;
+		}
+		.form-group label {
+			display: block;
+			font-weight: bold;
+			margin-bottom: 5px;
+		}
+		.form-group input, .form-group textarea {
+			width: 100%;
+			padding: 10px;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+			box-sizing: border-box;
+		}
+		.form-group textarea {
+			resize: vertical;
+			height: 150px;
+		}
+		.btn-submit {
+			background-color: #BF9B30;
+			color: #fff;
+			padding: 15px 20px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+			font-size: 16px;
+			font-weight: bold;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+		}
+		.btn-submit:hover {
+			background-color: #4a4a4a;
+		}
+		
+	</style>
+</head>
+
+<body>
+	<div class="container">
+		<div class="header">
+			<h1>Inquire About Our Watches</h1>
+			<p>Please fill out the form below, and we will get back to you as soon as possible.</p>
+		</div>
+
+		<form action="your-server-endpoint" method="post">
+			<div class="form-group">
+				<label for="name">Name</label>
+				<input type="text" id="name" name="name" required>
+			</div>
+			<div class="form-group">
+				<label for="email">Email</label>
+				<input type="email" id="email" name="email" required>
+			</div>
+			<div class="form-group">
+				<label for="phone">Phone</label>
+				<input type="tel" id="phone" name="phone">
+			</div>
+			<div class="form-group">
+				<label for="message">Message</label>
+				<textarea id="message" name="message" required></textarea>
+			</div>
+			<button type="submit" class="btn-submit">Submit Inquiry</button>
+		</form>
+	</div>
+</body>
+</html>
